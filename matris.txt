@@ -1,0 +1,25 @@
+public class transpoze {
+    public static void main(String[] args) {
+        int [][] matris={{1,3,6},{6,7,3},{8,5,9}};
+        int[][] trnspz=new int[3][3];
+        for (int i=0;i<3;i++){
+            for (int j=0;j<3;j++){
+                System.out.print(matris[i][j]+" ");
+            }
+            System.out.println();
+        }
+        for (int i=0;i<3;i++){
+            for (int j=0;j<3;j++){
+                trnspz[j][i]=matris[i][j];
+            }
+        }
+        System.out.println("MATRİS TRANSPOZU");
+        for (int i=0;i<3;i++){
+            for (int j=0;j<3;j++){
+                System.out.print(trnspz[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+    }
+}
